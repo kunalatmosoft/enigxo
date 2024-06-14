@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h2>Dashboard</h2>
+        <nav>
+            <ul>
+                <li><a href="#barChart">Bar Chart</a></li>
+                <li><a href="#lineChart">Line Chart</a></li>
+                <li><a href="#pieChart">Pie Chart</a></li>
+                <li><a href="#radarChart">Radar Chart</a></li>
+                <li><a href="#polarAreaChart">Polar Area Chart</a></li>
+                <li><a href="#doughnutChart">Doughnut Chart</a></li>
+                <li><a href="#scatterChart">Scatter Chart</a></li>
+                <li><a href="#bubbleChart">Bubble Chart</a></li>
+                <li><a href="#areaChart">Area Chart</a></li>
+                <li><a href="#horizontalBarChart">Horizontal Bar Chart</a></li>
+                <!-- Add more list items for additional charts -->
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Data Visualization Project</h1>
+        <form id="dataForm">
+            <label for="titleInput">Enter Chart Title:</label>
+            <input type="text" id="titleInput" required>
+            <label for="dataInput">Enter Data (comma separated):</label>
+            <input type="text" id="dataInput" required>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div class="charts">
+            <canvas id="barChart"></canvas>
+            <canvas id="lineChart"></canvas>
+            <canvas id="pieChart"></canvas>
+            <canvas id="radarChart"></canvas>
+            <canvas id="polarAreaChart"></canvas>
+            <canvas id="doughnutChart"></canvas>
+            <canvas id="scatterChart"></canvas>
+            <canvas id="bubbleChart"></canvas>
+            <canvas id="areaChart"></canvas>
+            <canvas id="horizontalBarChart"></canvas>
+            <!-- Add more canvas elements for additional charts -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
